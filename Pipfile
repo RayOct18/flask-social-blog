@@ -11,6 +11,8 @@ numpy = "*"
 flask-sqlalchemy = "*"
 flask-login = "*"
 flask-bootstrap = "*"
+flask-wtf = "*"
+email-validator = "*"
 
 [requires]
 python_version = "3.8"

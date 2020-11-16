@@ -1,7 +1,10 @@
 from flask import render_template
+from .forms import LoginForm
+
 from . import auth
 
 
 @auth.route('/login')
 def login():
-    return render_template('auth/login.html')
+    form = LoginForm()
+    return render_template('auth/login.html', form=form)
