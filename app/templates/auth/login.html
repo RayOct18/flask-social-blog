@@ -4,6 +4,10 @@
 {% block title %} Login {% endblock title %}
 
 {% block page_content %}
+<p>
+    New uesr?
+    <a href="{{ url_for('auth.register') }}">Click here to register</a>
+</p>
 {{ wtf.quick_form(form) }}
 {% endblock %}
 
